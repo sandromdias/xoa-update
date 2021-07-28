@@ -87,7 +87,7 @@ main() {
 	fi
 
 	#Check Git email
-	gitemail=$(git config --global user.email smdibm@gmail.com)
+	gitemail=smdibm@gmail.com
 	if [ -z "$gitemail" ]; then
 		echo "Git email required to run XOCE updater";
 		echo "enter your credentials with the following commands and then rerun this update script"
@@ -96,7 +96,7 @@ main() {
 	fi
 
 	#Check Git name
-	gituser=$(git config --global user.name sandromdias)
+	gituser=sandromdias
 	if [ -z "$gituser" ]; then
 		echo "Git name required to run XOCE updater";
 		echo "enter your credentials with the following commands and then rerun this update script"
